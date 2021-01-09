@@ -22,7 +22,10 @@ Array :=
   "Бивол" ; 19
 ]
 
-FileSelectFile, FileName, S8,, Create a new file:
+file := FileOpen("output/test.txt", "w")
+file.Write(Array[0])
+file.Close()
+;FileSelectFile, FileName, S8,, Create a new file:
 ; $questions = array(
 ;                 array('Горячкина', 1, 8, 9),
 ;                 array('Лагно', 2, 9, 21),
